@@ -4,6 +4,7 @@ import Footer from 'src/components/Footer';
 import Hero from 'src/components/Hero';
 import Projects from 'src/components/Projects';
 import Technologies from 'src/components/Technologies';
+import UnderConstruction from 'src/components/UnderConstruction';
 import type { LinkArray, ProjectArray } from 'src/types/project';
 
 
@@ -57,10 +58,14 @@ const HomePage = () => {
   return (
     <>
       <Metadata title="Home" description="Home page" />
-      <Hero></Hero>
-      <Projects projects={projects}></Projects>
-      <Technologies></Technologies>
-      <Footer projects={projects} links={links}></Footer>
+      <div className="flex flex-col h-[calc(100vh-46px)]">
+        <main className="mb-auto flex-grow flex flex-col">
+          <UnderConstruction></UnderConstruction>
+        </main>
+        <footer>
+          <Footer projects={projects} links={links}></Footer>
+        </footer>
+      </div>
     </>
   );
 };

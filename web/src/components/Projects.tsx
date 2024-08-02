@@ -16,11 +16,6 @@ export default function Projects({ projects }: Props) {
           Projects
         </h1>
       </div>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <Project project={projects[0]}></Project>
-        <Project project={projects[1]}></Project>
-        <Project project={projects[2]}></Project>
-      </div>
     </div>
   );
 };

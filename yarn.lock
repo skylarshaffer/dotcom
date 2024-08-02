@@ -3245,7 +3245,7 @@
     graphql "16.8.1"
     typescript "5.4.5"
 
-"@redwoodjs/cli-data-migrate@^7.7.3":
+"@redwoodjs/cli-data-migrate@7.7.3":
   version "7.7.3"
   resolved "https://registry.yarnpkg.com/@redwoodjs/cli-data-migrate/-/cli-data-migrate-7.7.3.tgz#e965fcf18d340a4759a24c6a09986935e9abc0db"
   integrity sha512-2mppFdlwFT04r42Etnyg0LHS7qKxq/KxPAdDQUt+xGp+uf8cnBOYGnsFSe8agae8B14qHJcl2dGnoJSrWyRCFw==

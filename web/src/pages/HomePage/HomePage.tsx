@@ -1,18 +1,16 @@
-import { Link, routes } from '@redwoodjs/router'
+import { Link, routes } from '@redwoodjs/router';
 import { Metadata } from '@redwoodjs/web'
+import Hero from 'src/components/Hero';
+import Projects from 'src/components/Projects';
 
 const HomePage = () => {
   return (
     <>
       <Metadata title="Home" description="Home page" />
-
-      <h1>Skylar Shaffer</h1>
-      <p>Full-Stack Web Developer</p>
-      <p>
-        <Link to={routes.home()}>Home</Link>
-      </p>
+      <Hero></Hero>
+      <Projects></Projects>
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

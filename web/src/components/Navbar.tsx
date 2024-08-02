@@ -79,10 +79,34 @@ export default function Navbar() {
         id="navbar-collapse-with-animation"
       >
         <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0">
-          <div>brickquery</div>
-          <div>entraspection</div>
-          <div>isotomate</div>
-        </div>
+      <div>
+        <a
+          className="inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+          data-ai-key="content"
+          href="#brickquery-preview"
+          target="_self">
+          brickquery
+        </a>
+      </div>
+      <div>
+        <a
+          className="inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+          data-ai-key="content"
+          href="#entraspection-preview"
+          target="_self">
+          entraspection
+        </a>
+      </div>
+      <div>
+        <a
+          className="inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+          data-ai-key="content"
+          href="#isotomate-preview"
+          target="_self">
+          isotomate
+        </a>
+      </div>
+    </div>
       </div>
     </nav>
   )

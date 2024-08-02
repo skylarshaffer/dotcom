@@ -58,7 +58,7 @@ const HomePage = () => {
   return (
     <>
       <Metadata title="Home" description="Home page" />
-      <div className="flex flex-col h-[calc(100vh-46px)]">
+      <div className="flex flex-col h-[calc(100vh-48px)]">
         <main className="mb-auto flex-grow flex flex-col">
           <UnderConstruction></UnderConstruction>
         </main>

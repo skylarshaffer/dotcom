@@ -1,10 +1,8 @@
-import { Link, routes } from '@redwoodjs/router';
 import { Metadata } from '@redwoodjs/web'
 import Footer from 'src/components/Footer';
 import Hero from 'src/components/Hero';
 import Projects from 'src/components/Projects';
 import Technologies from 'src/components/Technologies';
-import UnderConstruction from 'src/components/UnderConstruction';
 import type { LinkArray, ProjectArray } from 'src/types/project';
 
 
@@ -19,37 +17,37 @@ const projects: ProjectArray = [
     name: 'brickquery',
     urls: {
       gitHub: 'https://github.com/skylarshaffer/brickquery',
-      demo: 'https://placeholder.com/brickquery/demo',
+      demo: 'https://github.com/skylarshaffer/brickquery',
       website: 'https://brickquery.com'
     },
     category: 'Bricklink Seller Tools',
     description: 'A suite of tools, databases, and data analytics for BrickLink sellers.',
-    iconUrl: '',
-    backgroundUrl: ''
+    iconUrl: 'brickquery.svg',
+    colors: ['#F7BCDA','#FFE001','#009FE0']
   },
   {
     name: 'entraspection',
     urls: {
       gitHub: 'https://github.com/skylarshaffer/entraspection',
-      demo: 'https://placeholder.com/entraspection/demo',
+      demo: 'https://github.com/skylarshaffer/entraspectiono',
       website: 'https://entraspection.com'
     },
     category: 'GraphQL Pentesting',
     description: 'GraphQL vulnerability discovery and penetration testing tools for security research.',
-    iconUrl: '',
-    backgroundUrl: ''
+    iconUrl: 'entraspection.svg',
+    colors: ['#025033','#B3AF8F','#025033']
   },
   {
-    name: 'isotomate',
+    name: 'isocutor',
     urls: {
-      gitHub: 'https://github.com/skylarshaffer/isotomate',
-      demo: 'https://placeholder.com/isotomate/demo',
-      website: 'https://isotomate.com'
+      gitHub: 'https://github.com/skylarshaffer/isocutor',
+      demo: 'https://github.com/skylarshaffer/isocutor',
+      website: 'https://isocutor.com'
     },
     category: 'ISO Automation',
     description: 'WinPE automation package for one-click driver and Windows installation.',
-    iconUrl: '',
-    backgroundUrl: ''
+    iconUrl: 'isocutor.svg',
+    colors: ['#CC444B','#F7BCDA','#CC444B']
   },
 ]
 
@@ -58,14 +56,10 @@ const HomePage = () => {
   return (
     <>
       <Metadata title="Home" description="Home page" />
-      <div className="flex flex-col h-[calc(100vh-48px)]">
-        <main className="mb-auto flex-grow flex flex-col">
-          <UnderConstruction></UnderConstruction>
-        </main>
-        <footer>
-          <Footer projects={projects} links={links}></Footer>
-        </footer>
-      </div>
+      <Hero></Hero>
+      <Projects projects={projects}></Projects>
+      {/*<Technologies></Technologies>*/}
+      <Footer projects={projects} links={links}></Footer>
     </>
   );
 };

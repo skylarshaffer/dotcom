@@ -9,6 +9,7 @@ export type ProjectObject = {
   description: string;
   iconUrl?: string;
   backgroundUrl?:string;
+  colors: string[]
 };
 
 export type ProjectArray = ProjectObject[]
@@ -16,4 +17,3 @@ export type ProjectArray = ProjectObject[]
 export type LinkObject = Record<string,string>
 
 export type LinkArray = LinkObject[]
-

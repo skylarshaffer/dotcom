@@ -9,6 +9,7 @@ export type ProjectObject = {
   description: string;
   iconUrl?: string;
   backgroundUrl?:string;
+  colors: string[]
 };
 
 export type ProjectArray = ProjectObject[]

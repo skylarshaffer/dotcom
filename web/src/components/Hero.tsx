@@ -11,7 +11,7 @@ export default function Hero () {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-center items-center text-center sm:flex sm:justify-center sm:items-center sm:text-left">
+              {/*<div className="flex justify-center items-center text-center sm:flex sm:justify-center sm:items-center sm:text-left">
                 <div className="pr-5 flex-shrink-0 pb-5 sm:flex sm:pb-0 sm:pr-5">
                   <div className="justify-center flex -space-x-3">
                     <img
@@ -58,7 +58,7 @@ export default function Hero () {
                     <div>Technologies</div>
                   </div>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

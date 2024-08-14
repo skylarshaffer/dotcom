@@ -32,14 +32,14 @@ export default function Project ({ project }: Props) {
             {project.description}
           </div>
           <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
-            {(project.name === 'entraspection') ?
+            {(project.name === 'entraspection' || project.name === 'brickquery') &&
             <>
             <a
               className="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800 sm:p-4"
               data-ai-key="content"
               href={project.urls.demo}
               target="_self">
-              Watch Demo
+              {(project.name === 'entraspection') && 'Try Demo' || (project.name === 'brickquery') && 'View brickinfo Demo'}
             </a>
             <a
               className="w-full py-3 px-4 inline-flex justify-center items-center gap-2 font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800 rounded-br-xl sm:p-4"
@@ -49,14 +49,6 @@ export default function Project ({ project }: Props) {
               View Source
             </a>
             </>
-            :
-            <a
-              className="w-full py-3 px-4 inline-flex justify-center items-center gap-2 font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800 rounded-br-xl rounded-bl-xl sm:p-4"
-              data-ai-key="content"
-              href={project.urls.gitHub}
-              target="_self">
-              View Source
-            </a>
             }
           </div>
         </div>

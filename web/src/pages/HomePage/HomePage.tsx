@@ -17,11 +17,11 @@ const projects: ProjectArray = [
     name: 'brickquery',
     urls: {
       gitHub: 'https://github.com/skylarshaffer/brickquery',
-      demo: 'https://github.com/skylarshaffer/brickquery',
+      demo: 'https://github.com/skylarshaffer/brickinfo',
       website: 'https://brickquery.com'
     },
     category: 'Bricklink Seller Tools',
-    description: 'A suite of tools, databases, and data analytics for BrickLink sellers.',
+    description: 'A suite of tools, databases, and data analytics for BrickLink sellers. Flagship free product is brickinfo, a powerful Chrome Extension awaiting an API key.',
     iconUrl: 'brickquery.svg',
     colors: ['#F7BCDA','#FFE001','#009FE0']
   },
@@ -29,8 +29,8 @@ const projects: ProjectArray = [
     name: 'entraspection',
     urls: {
       gitHub: 'https://github.com/skylarshaffer/entraspection',
-      demo: 'https://entraspection.skylarshaffer.com',
-      website: 'https://entraspection.com'
+      demo: 'http://entraspection.skylarshaffer.com',
+      website: 'http://entraspection.skylarshaffer.com'
     },
     category: 'GraphQL Pentesting',
     description: 'GraphQL vulnerability discovery and penetration testing tools for security research.',
@@ -41,11 +41,11 @@ const projects: ProjectArray = [
     name: 'isocutor',
     urls: {
       gitHub: 'https://github.com/skylarshaffer/isocutor',
-      demo: 'https://github.com/skylarshaffer/isocutor',
-      website: 'https://isocutor.com'
+      demo: '',
+      website: ''
     },
     category: 'ISO Automation',
-    description: 'WinPE automation package for one-click driver and Windows installation.',
+    description: 'WinPE automation package for one-click driver and Windows installation. Not yet open-source.',
     iconUrl: 'isocutor.svg',
     colors: ['#CC444B','#F7BCDA','#CC444B']
   },

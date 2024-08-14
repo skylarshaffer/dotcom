@@ -29,7 +29,7 @@ const projects: ProjectArray = [
     name: 'entraspection',
     urls: {
       gitHub: 'https://github.com/skylarshaffer/entraspection',
-      demo: 'https://github.com/skylarshaffer/entraspectiono',
+      demo: 'https://entraspection.skylarshaffer.com',
       website: 'https://entraspection.com'
     },
     category: 'GraphQL Pentesting',

@@ -16,7 +16,7 @@ const projects: ProjectArray = [
   {
     name: 'brickquery',
     urls: {
-      gitHub: 'https://github.com/skylarshaffer/brickquery',
+      gitHub: 'https://github.com/skylarshaffer/brickinfo',
       demo: 'https://github.com/skylarshaffer/brickinfo?tab=readme-ov-file#demo',
       website: 'https://brickquery.com'
     },
